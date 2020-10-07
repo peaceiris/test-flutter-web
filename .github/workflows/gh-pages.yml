@@ -25,6 +25,7 @@ jobs:
 
       - name: Install
         run: |
+          flutter upgrade
           flutter config --enable-web
           flutter pub get
 
