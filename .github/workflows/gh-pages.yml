@@ -19,13 +19,12 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: _flutter/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
+          key: ${{ runner.os }}-flutter-pub-${{ hashFiles('**/pubspec.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pub-
+            ${{ runner.os }}-flutter-pub-
 
       - name: Install
         run: |
-          flutter upgrade
           flutter config --enable-web
           flutter pub get
 
