@@ -16,6 +16,13 @@ jobs:
           git clone https://github.com/flutter/flutter.git --depth 1 -b beta _flutter
           echo "${GITHUB_WORKSPACE}/_flutter/bin" >> ${GITHUB_PATH}
 
+      - uses: actions/cache@v2
+        with:
+          path: _flutter/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+
       - name: Install
         run: |
           flutter config --enable-web
