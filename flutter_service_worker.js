@@ -9,8 +9,8 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "9a62a954b81a1ad45a58b9bcea89b50b",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
-"index.html": "46f7b9b5de3c507770b78a5b599969e5",
-"/": "46f7b9b5de3c507770b78a5b599969e5"
+"index.html": "8e6f659e16daf344237b27a0a2883df1",
+"/": "8e6f659e16daf344237b27a0a2883df1"
 };
 
 // The application shell files that are downloaded before a service worker can
